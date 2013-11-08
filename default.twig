@@ -1,0 +1,110 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+<div class="bg-glow">
+
+    <div class="global">
+
+        <!--header-->
+        <header>
+
+            <div class="header">
+                <div class="header-top">
+                    <div class="header-bottom">
+
+                        <div class="container">
+
+                            <div class="row">
+
+                                <article class="span12">
+
+                                    {{widget('space', 'space', {'height': '30'})|raw}}
+                                    <h1 class="brand">{{widget('companyheader', 'companyheader', {"defaultlogo": asset('/images/logo.png')})|raw}}</h1>
+                                    {{widget('space', 'space', {'height': '30'})|raw}}
+
+                                    <div class="nav">
+
+                                        <div class="row">
+                                            <article class="span9">
+
+                                                {{widget('navigation', 'navigation', {'align': 'left'})|raw}}
+
+                                            </article>
+                                            <article class="span3">
+
+                                                {{widget('socialicons', 'socialicons', {'googleplus': 'https://plus.google.com', 'linkedin':'http://www.linkedin.com', 'facebook': 'https://www.facebook.com', 'twitter': 'https://twitter.com', 'youtube': 'https://www.youtube.com', 'rss': '#'})|raw}}
+
+                                            </article>
+                                        </div>
+
+                                    </div>
+
+                                </article>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </header>
+
+        <!--content-->
+
+        <div class="contentInner">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <article class="span12">
+
+                        {{zone('main')|raw}}                    
+                        {{widget('space', 'space', {'height': '30'})|raw}}
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!--footer-->
+        <footer>
+
+            <div class="container">
+
+                <div class="row">
+
+                    <section class="span12">
+
+                        <div class="row">
+
+                            <article class="span12">
+
+                                {{widget('image', 'flogo', { 'src': asset('images/flogo.png'), 'imageWidth': '276px'})|raw}}
+                                {{widget('content', 'copyright_copy', {content: '&copy;&nbsp;2013&nbsp;|&nbsp;', lines: 'all'})|raw}}
+                                {{widget('content', 'copyright_link', {content: '<a href="#">Privacy Policy</a>', lines: 'all'})|raw}}
+                                {{widget('space', 'space', {'height': '30'})|raw}}
+
+                            </article>
+
+                        </div>
+
+                    </section>
+
+                </div>
+
+            </div>
+
+        </footer>
+
+    </div>
+    
+</div>
+
+{% endblock %}

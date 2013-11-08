@@ -1,0 +1,131 @@
+{
+  "name":"theme013",
+  "thumbnail":"theme_preview.png",
+  "screenshot":"theme_preview.png",    
+    "colorSwatches":
+    {
+        "Swatch 1": {
+            "color1":"#ffffff",
+            "color2":"#645f58",
+            "color3":"#cc220b",
+            "color4":"#5c564d",
+            "color5":"#d1ccc2",
+            "color6":"#524a42",
+            "color7":"#77736c"
+        },
+        "Swatch 2": {
+            "color1":"#ffffff",
+            "color2":"#72d0eb",
+            "color3":"#83c028",
+            "color4":"#2f353e",
+            "color5":"#b4bec7",
+            "color6":"#434f5b",
+            "color7":"#ffffff"
+        },
+        "Swatch 3": {
+            "color1":"#ffffff",
+            "color2":"#72d0eb",
+            "color3":"#83c028",
+            "color4":"#2f353e",
+            "color5":"#b4bec7",
+            "color6":"#434f5b",
+            "color7":"#ffffff"
+        },
+        "Swatch 4": {
+            "color1":"#ffffff",
+            "color2":"#72d0eb",
+            "color3":"#83c028",
+            "color4":"#2f353e",
+            "color5":"#b4bec7",
+            "color6":"#434f5b",
+            "color7":"#ffffff"
+        },
+        "Swatch 5": {
+            "color1":"#ffffff",
+            "color2":"#72d0eb",
+            "color3":"#83c028",
+            "color4":"#2f353e",
+            "color5":"#b4bec7",
+            "color6":"#434f5b",
+            "color7":"#ffffff"
+        }
+    },
+    "fontSwatch": {
+       "title": "Times New Roman",
+        "font1": {
+            "font-family": "Times New Roman",
+            "font-size": "58px",
+            "font-weight": "inherit",
+            "line-height": "60px",
+            "color": "@color-swatch1"
+        },
+        "font2": {
+            "font-family": "Times New Roman",
+            "font-size": "58px",
+            "font-weight": "inherit",
+            "line-height": "60px",
+            "color": "@color-swatch2"
+        },
+        "font3": {
+            "font-family": "Times New Roman",
+            "font-size": "21px",
+            "font-weight": "inherit",
+            "line-height": "24px",
+            "color": "@color-swatch2"
+        },
+        "font4": {
+            "font-family": "Times New Roman",
+            "font-size": "19px",
+            "font-weight": "inherit",
+            "line-height": "22px",
+            "color": "@color-swatch2"
+        },
+        "font5": {
+            "font-family": "Times New Roman",
+            "font-size": "12px",
+            "font-weight": "inherit",
+            "line-height": "18px",
+            "color": "@color-swatch2"
+        },
+        "font6": {
+            "font-family": "Times New Roman",
+            "font-size": "28px",
+            "font-weight": "inherit",
+            "line-height": "30px",
+            "color": "@color-swatch6",
+            "color-hover": "@color-swatch1",
+            "letter-spacing": "inherit"
+        },
+        "font7": {
+            "font-size": "19px",
+            "font-weight": "inherit",
+            "line-height": "23px",
+            "color": "@color-swatch1",
+            "letter-spacing": "inherit"
+        },
+        "font8": {
+            "font-family": "Arvo",
+            "font-size": "50px",
+            "font-weight": "inherit",
+            "line-height": "50px",
+            "color": "@color-swatch1",
+            "letter-spacing": "inherit"
+        },
+        "font9": {
+            "font-family": "Arvo",
+            "font-size": "24px",
+            "font-weight": "inherit",
+            "line-height": "50px",
+            "color": "@color-swatch1",
+            "letter-spacing": "inherit"
+        },
+        "font10": {
+            "font-family": "Arvo",
+            "font-size": "24px",
+            "font-weight": "inherit",
+            "line-height": "50px",
+            "color": "@color-swatch1",
+            "letter-spacing": "inherit"
+        }
+    }
+}

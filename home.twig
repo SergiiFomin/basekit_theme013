@@ -1,0 +1,239 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+<div class="bg-glow">
+    
+    <div class="global">
+
+        <!--header-->
+        <header>
+
+            <div class="header">
+                <div class="header-top">
+                    <div class="header-bottom">
+
+                        <div class="container">
+
+                            <div class="row">
+
+                                <article class="span12">
+
+                                    {{widget('space', 'space', {'height': '30'})|raw}}
+                                    <h1 class="brand">{{widget('companyheader', 'companyheader', {"defaultlogo": asset('/images/logo.png')})|raw}}</h1>
+                                    {{widget('space', 'space', {'height': '30'})|raw}}
+
+                                    <div class="nav">
+
+                                        <div class="row">
+                                            <article class="span9">
+
+                                                {{widget('navigation', 'navigation', {'align': 'left'})|raw}}
+
+                                            </article>
+                                            <article class="span3">
+
+                                                {{widget('socialicons', 'socialicons', {'googleplus': 'https://plus.google.com', 'linkedin':'http://www.linkedin.com', 'facebook': 'https://www.facebook.com', 'twitter': 'https://twitter.com', 'youtube': 'https://www.youtube.com', 'rss': '#'})|raw}}
+
+                                            </article>
+                                        </div>
+
+                                    </div>
+
+                                    {{widget('space', 'space', {'height': '10'})|raw}}
+                                    {{widget('responsiveslideshow', 'responsiveslideshow', {'duration':'3', 'transSpeed': '1000', 'transType': 'fade', 'showButtons': true, 'showBullets': true, 'allowPause': true, 'allowLoop': true, 'images':[{'imageHeight':'431', 'imageWidth':'770', 'url':'http://placehold.it/431x770', 'title':'test title', 'description': 'test desc'},{'imageHeight':'431', 'imageWidth':'770', 'url':'http://placehold.it/431x770', 'title':'test title', 'description': 'test desc'},{'imageHeight':'431', 'imageWidth':'770', 'url':'http://placehold.it/431x770', 'title':'test title', 'description': 'test desc'},{'imageHeight':'431', 'imageWidth':'770', 'url':'http://placehold.it/431x770', 'title':'test title', 'description': 'test desc'}]})|raw}}        
+                                    {{widget('space', 'space', {'height': '30'})|raw}}
+
+                                </article>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </header>
+
+        <!--content-->
+
+        <div class="contentInner">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <article class="span12">
+
+                        {{widget('content', 'content', {content: '<h1 class="center">food + drink + rest</h1>', lines: 'all'})|raw}}
+                        {{widget('content', 'home-text', {content: '<p class="center"><strong>Cum sociis natoque penatibus et magnis dis parturient montes ascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio gravida at cursus nec luctus a lorem. Maecenas tristique orci ac sem. Duis ultricies pharetra magna. Donec accumsan malesuada orci. Donec sit amet eros. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris fermentum dictum magna.</strong></p>', lines: 'all'})|raw}}
+
+
+                        <div class="row">
+
+                            <article class="span3">
+
+                                <div class="local">
+                                    {{widget('content', 'local-content', {content: '<p>USA - LOS ANGELES, 901 East E Street, Wilmington, CA 90744</p><span>E -mail:</span><a href="mailto:mail@demolink.org">mail@demolink.org</a><strong>1 800 123 1234</strong>', lines: 'all'})|raw}}
+                                </div>
+
+                                {{widget('space', 'space', {'height': '30'})|raw}}
+
+                            </article>
+
+                            <article class="span3">
+
+                                <div class="img-title">
+                                    {{widget('image', 'image', { 'src': asset('images/img-title1.jpg'), 'imageWidth': '43px'})|raw}}
+                                    {{widget('content', 'content', {content: '<h3>curbside take-away</h3>', lines: 'all'})|raw}}
+                                </div>
+
+                                {{widget('content', 'content', {content: '<p>Cum sociis natoque penatibus et magnis dis parturient montes ascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio.</p>', lines: 'all'})|raw}}
+
+                                {{widget('button', 'button', {italic: false, text:'order', 'align':'widget-align-left'})|raw}}
+
+                                {{widget('space', 'space', {'height': '30'})|raw}}
+
+                            </article>
+
+                            <article class="span3">
+
+                                <div class="img-title">
+                                    {{widget('image', 'image', { 'src': asset('images/img-title2.jpg'), 'imageWidth': '43px'})|raw}}
+                                    {{widget('content', 'content', {content: '<h3>buy gift cards</h3>', lines: 'all'})|raw}}
+                                </div>
+
+                                {{widget('content', 'content', {content: '<p>Cum sociis natoque penatibus et magnis dis parturient montes ascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio.</p>', lines: 'all'})|raw}}
+
+                                {{widget('button', 'button', {italic: false, text:'buy', 'align':'widget-align-left'})|raw}}
+
+                                {{widget('space', 'space', {'height': '30'})|raw}}
+
+                            </article>
+
+                            <article class="span3">
+
+                                <div class="img-title">
+                                    {{widget('image', 'image', { 'src': asset('images/img-title3.jpg'), 'imageWidth': '43px'})|raw}}
+                                    {{widget('content', 'content', {content: '<h3>outback 365 offers</h3>', lines: 'all'})|raw}}
+                                </div>
+
+                                {{widget('content', 'content', {content: '<p>Cum sociis natoque penatibus et magnis dis parturient montes ascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio.</p>', lines: 'all'})|raw}}
+
+                                {{widget('button', 'button', {italic: false, text:'sign up', 'align':'widget-align-left'})|raw}}
+
+                                {{widget('space', 'space', {'height': '30'})|raw}}
+
+                            </article>
+
+                        </div>
+
+                        {{zone('main')|raw}}
+                        {{widget('space', 'space', {'height': '30'})|raw}}
+
+
+                        <div class="row">
+
+                            <article class="span3">
+
+                                <div class="banner color1">
+
+                                    {{widget('content', 'text1', {content: '<span class="text-xlb">every friday:</span>', lines: 'all'})|raw}}
+                                    {{widget('content', 'text2', {content: '<span class="text-mb">folk-rock band</span>', lines: 'all'})|raw}}
+                                    {{widget('content', 'text3', {content: '<span class="text-xs">doors: 9:00 pm</span>', lines: 'all'})|raw}}
+                                    {{widget('content', 'text4', {content: '<span class="text-xlb">every friday:</span>', lines: 'all'})|raw}}
+                                    {{widget('content', 'text5', {content: '<span class="text-mb">indie-rock band</span>', lines: 'all'})|raw}}
+                                    {{widget('content', 'text6', {content: '<span class="text-xs">doors: 4:00 pm</span>', lines: 'all'})|raw}}
+
+                                </div>
+                                
+                                {{widget('space', 'space', {'height': '30'})|raw}}
+
+                            </article>
+
+                            <article class="span3">
+
+                                <div class="banner color2 new">
+
+                                    {{widget('content', 'text7', {content: '<span class="text-xlb">click here</span>', lines: 'all'})|raw}}
+                                    {{widget('content', 'text2', {content: '<p><span class="text-mb">folk-rock band</span></p>', lines: 'all'})|raw}}
+                                    {{widget('content', 'text8', {content: '<span class="text-xlb">free appetizer</span>', lines: 'all'})|raw}}
+
+                                </div>
+                                
+                                {{widget('space', 'space', {'height': '30'})|raw}}
+
+                            </article>
+
+                            <article class="span3">
+
+                                <div class="banner color3">
+
+                                    {{widget('content', 'text9', {content: '<p><span class="text-xlb">crave the combo</span></p>', lines: 'all'})|raw}}
+                                    {{widget('content', 'text10', {content: '<span class="text-xl">lunch combos starting at  $7.99</span>', lines: 'all'})|raw}}
+
+                                </div>
+                                
+                                {{widget('space', 'space', {'height': '30'})|raw}}
+
+                            </article>
+
+                            <article class="span3">
+
+                                <div class="banner color4">
+
+                                    {{widget('content', 'text11', {content: '<span class="text-lb">25% off for students all year!</span>', lines: 'all'})|raw}}
+                                    {{widget('content', 'text12', {content: '<span class="text-xl">Plus enjoy our other tempting student offers</span>', lines: 'all'})|raw}}
+
+                                </div>
+                                
+                                {{widget('space', 'space', {'height': '30'})|raw}}
+
+                            </article>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!--footer-->
+        <footer>
+
+            <div class="container">
+
+                <div class="row">
+
+                    <section class="span12">
+
+                        <div class="row">
+
+                            <article class="span12">
+
+                                {{widget('image', 'flogo', { 'src': asset('images/flogo.png'), 'imageWidth': '276px'})|raw}}
+                                {{widget('content', 'copyright_copy', {content: '&copy;&nbsp;2013&nbsp;|&nbsp;', lines: 'all'})|raw}}
+                                {{widget('content', 'copyright_link', {content: '<a href="#">Privacy Policy</a>', lines: 'all'})|raw}}
+                                {{widget('space', 'space', {'height': '30'})|raw}}
+
+                            </article>
+
+                        </div>
+
+                    </section>
+
+                </div>
+
+            </div>
+
+        </footer>
+
+    </div>
+    
+</div>
+
+{% endblock %}

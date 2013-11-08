@@ -1,0 +1,218 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+<div class="bg-glow">
+
+    <div class="global">
+
+        <!--header-->
+        <header>
+
+            <div class="header">
+                <div class="header-top">
+                    <div class="header-bottom">
+
+                        <div class="container">
+
+                            <div class="row">
+
+                                <article class="span12">
+
+                                    {{widget('space', 'space', {'height': '30'})|raw}}
+                                    <h1 class="brand">{{widget('companyheader', 'companyheader', {"defaultlogo": asset('/images/logo.png')})|raw}}</h1>
+                                    {{widget('space', 'space', {'height': '30'})|raw}}
+
+                                    <div class="nav">
+
+                                        <div class="row">
+                                            <article class="span9">
+
+                                                {{widget('navigation', 'navigation', {'align': 'left'})|raw}}
+
+                                            </article>
+                                            <article class="span3">
+
+                                                {{widget('socialicons', 'socialicons', {'googleplus': 'https://plus.google.com', 'linkedin':'http://www.linkedin.com', 'facebook': 'https://www.facebook.com', 'twitter': 'https://twitter.com', 'youtube': 'https://www.youtube.com', 'rss': '#'})|raw}}
+
+                                            </article>
+                                        </div>
+
+                                    </div>
+
+                                </article>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </header>
+
+        <!--content-->
+
+        <div class="contentInner">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <article class="span12">
+
+
+                        <div class="row">
+
+                            <article class="span4">
+
+                                {{widget('content', 'content', {content: '<h2>Who We Are</h2>', lines: 'all'})|raw}}
+
+                                <div class="drop">{{widget('content', 'content', {content: '1', lines: 'all'})|raw}}</div>
+
+                                <div class="overflow">
+
+                                    {{widget('content', 'content', {content: '<strong>Cum sociis natoque penatibus egnis.</strong>', lines: 'all'})|raw}}
+                                    {{widget('content', 'content', {content: 'Dis parturient montes ascetur ridiculus mus. Nulla dui. Fusce feugiat.', lines: 'all'})|raw}}
+
+                                </div>
+                                <div class="clear"></div>
+
+                                {{widget('line', 'line', {'thickness': 'inherit', 'padding': 'inherit', 'length':'inherit', 'align': 'center'})|raw}}
+
+                                <div class="drop">{{widget('content', 'content', {content: '2', lines: 'all'})|raw}}</div>
+
+                                <div class="overflow">
+
+                                    {{widget('content', 'content', {content: '<strong>Penatibus egnis lreop otra seren.</strong>', lines: 'all'})|raw}}
+                                    {{widget('content', 'content', {content: 'Dis parturient montes ascetur ridiculus mus. Nulla dui. Fusce feugiat.', lines: 'all'})|raw}}
+
+                                </div>
+                                <div class="clear"></div>
+
+                                {{widget('line', 'line', {'thickness': 'inherit', 'padding': 'inherit', 'length':'inherit', 'align': 'center'})|raw}}
+
+                                <div class="drop">{{widget('content', 'content', {content: '3', lines: 'all'})|raw}}</div>
+
+                                <div class="overflow">
+
+                                    {{widget('content', 'content', {content: '<strong>Cum sociis natoque penatibus egnis.</strong>', lines: 'all'})|raw}}
+                                    {{widget('content', 'content', {content: 'Dis parturient montes ascetur ridiculus mus. Nulla dui. Fusce feugiat.', lines: 'all'})|raw}}
+
+                                </div>
+                                <div class="clear"></div>
+
+                                {{widget('space', 'space', {'height': '50'})|raw}}
+
+                                {{widget('content', 'content', {content: '<h2>advantages</h2>', lines: 'all'})|raw}}
+
+                                <ul class="list">
+                                    <li>{{widget('content', 'content', {content: 'Cum sociis natoque penatibus et magnis dis ', lines: 'all'})|raw}}</li>
+                                    <li>{{widget('content', 'content', {content: 'Parturient montes ascetur ridicu', lines: 'all'})|raw}}</li>
+                                    <li>{{widget('content', 'content', {content: 'Lus mus nulla dui fusce feugiat malesuada od', lines: 'all'})|raw}}</li>
+                                    <li>{{widget('content', 'content', {content: 'Morbi nunc odio gravida at curs', lines: 'all'})|raw}}</li>
+                                    <li>{{widget('content', 'content', {content: 'Us nec luctus a lorem aecenas tristique orci ac ', lines: 'all'})|raw}}</li>
+                                    <li>{{widget('content', 'content', {content: 'Duis ultricies pharetra magna', lines: 'all'})|raw}}</li>
+                                    <li>{{widget('content', 'content', {content: 'Donec accumsan malesuada orci onec sit amet  ', lines: 'all'})|raw}}</li>
+                                    <li>{{widget('content', 'content', {content: 'Lorem ipsum dolor sit amet', lines: 'all'})|raw}}</li>
+                                    <li>{{widget('content', 'content', {content: 'Consectetuer adipiscing elit auris fermentum ', lines: 'all'})|raw}}</li>
+                                    <li>{{widget('content', 'content', {content: 'Sed laoreet aliquam leo tellus dol', lines: 'all'})|raw}}</li>
+                                    <li>{{widget('content', 'content', {content: 'Or dapibus eget elementum vel cursus eleif', lines: 'all'})|raw}}</li>
+                                </ul>
+
+                                {{widget('space', 'space', {'height': '50'})|raw}}
+
+                            </article>
+
+                            <article class="span8">
+
+                                {{widget('content', 'content', {content: '<h2>About Us</h2>', lines: 'all'})|raw}}
+                                {{widget('content', 'content', {content: '<p><strong>Fusce euismod consequat ante. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Pellentesque sed dolor. Aliquam congue fermentum nisl.</strong></p>', lines: 'all'})|raw}}
+                                {{widget('content', 'content', {content: '<p>Dis parturient montes ascetur ridiculus mus. Nulla dui. Fusce feugiat. Balesuada odio. Morbi nunc odio gravida at cursus nec luctus a lorem. Maecenas tristique orci ac sem. Duis ultricies pharetra magna. Donec accumsan malesuada orci. Donec sit amet eros. Lorem ipsum dolor sit amet, sere consectetuer adipiscing elit. Mauris fermentum dictum magna lorem.</p>', lines: 'all'})|raw}}
+                                {{widget('button', 'button', {italic: false, text:'read more', 'align':'widget-align-left'})|raw}}
+                                {{widget('space', 'space', {'height': '50'})|raw}}
+
+                                {{widget('content', 'content', {content: '<h2>Our Cooks</h2>', lines: 'all'})|raw}}
+
+                                <ul class="images">
+                                    <li>
+                                        <div>
+                                            {{widget('image', 'team-image1', { 'src': asset('images/team-image1.jpg'), 'imageWidth': '768px'})|raw}}
+                                            {{widget('content', 'team-name1', {content: '<strong>John Franklin</strong>', lines: 'all'})|raw}}
+                                            {{widget('content', 'team-text1', {content: 'Dis parturient montes cetur ridiculus mus. Nulla.', lines: 'all'})|raw}}
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            {{widget('image', 'team-image2', { 'src': asset('images/team-image2.jpg'), 'imageWidth': '768px'})|raw}}
+                                            {{widget('content', 'team-name2', {content: '<strong>John Franklin</strong>', lines: 'all'})|raw}}
+                                            {{widget('content', 'team-text2', {content: 'Dis parturient montes cetur ridiculus mus. Nulla.', lines: 'all'})|raw}}
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            {{widget('image', 'team-image3', { 'src': asset('images/team-image3.jpg'), 'imageWidth': '768px'})|raw}}
+                                            {{widget('content', 'team-name3', {content: '<strong>John Franklin</strong>', lines: 'all'})|raw}}
+                                            {{widget('content', 'team-text3', {content: 'Dis parturient montes cetur ridiculus mus. Nulla.', lines: 'all'})|raw}}
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            {{widget('image', 'team-image4', { 'src': asset('images/team-image4.jpg'), 'imageWidth': '768px'})|raw}}
+                                            {{widget('content', 'team-name4', {content: '<strong>John Franklin</strong>', lines: 'all'})|raw}}
+                                            {{widget('content', 'team-text4', {content: 'Dis parturient montes cetur ridiculus mus. Nulla.', lines: 'all'})|raw}}
+                                        </div>
+                                    </li>
+                                </ul>
+
+                            </article>
+
+                        </div>
+
+                        {{zone('main')|raw}}                    
+                        {{widget('space', 'space', {'height': '30'})|raw}}
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!--footer-->
+        <footer>
+
+            <div class="container">
+
+                <div class="row">
+
+                    <section class="span12">
+
+                        <div class="row">
+
+                            <article class="span12">
+
+                                {{widget('image', 'flogo', { 'src': asset('images/flogo.png'), 'imageWidth': '276px'})|raw}}
+                                {{widget('content', 'copyright_copy', {content: '&copy;&nbsp;2013&nbsp;|&nbsp;', lines: 'all'})|raw}}
+                                {{widget('content', 'copyright_link', {content: '<a href="#">Privacy Policy</a>', lines: 'all'})|raw}}
+                                {{widget('space', 'space', {'height': '30'})|raw}}
+
+                            </article>
+
+                        </div>
+
+                    </section>
+
+                </div>
+
+            </div>
+
+        </footer>
+
+    </div>
+    
+</div>
+
+{% endblock %}

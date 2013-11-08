@@ -1,0 +1,286 @@
+#slider > article {
+	width:100%;
+	float:none;
+	margin:0;
+}
+#slider {
+	margin:0;
+    margin-bottom: 77px;
+}
+#flexslider .slides > li {
+	display: none;
+	position:relative;
+}
+.flex-pauseplay span {
+	text-transform: capitalize;
+}
+/* Clearfix for the .slides element */
+.slides:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+html[xmlns] .slides {
+	display: block;
+}
+* html .slides {
+	height: 1%;
+}
+#flexslider {
+	position:relative;
+}
+.slides {
+	list-style: none outside none;
+	margin:0;
+}
+.slides img {
+	width:100%
+}
+/* Control Nav */
+#flexslider .flex-direction-nav {
+	display: inline-block;
+	position:absolute;
+	bottom:22%;
+    margin:0;
+	right: 15%;
+    margin-right: 566px;
+	z-index:1000;
+	list-style:none;
+}
+.flex-direction-nav li {
+	float:left;
+	width:76px;
+	height:76px;
+}
+.flex-direction-nav li:first-child {
+	float:left;
+}
+#flexslider .flex-direction-nav li a {
+	width:76px;
+	height:76px;
+	display:block;
+}
+#flexslider .flex-direction-nav li a.flex-prev {
+	background:#3e454c url(../img/prev-2.png) center center no-repeat;
+	float:left;
+}
+#flexslider .flex-direction-nav li a.flex-next {
+    background:#3e454c url(../img/next-2.png) center center no-repeat;
+	float:left;
+}
+#flexslider .flex-direction-nav li a:hover {
+	background-color:#ff7f66;
+}
+.flex-direction-nav {
+	display:none
+}
+.flex-control-nav {
+	display: inline-block;
+	z-index:2;
+	overflow:hidden;
+	margin:0;
+	list-style:none;
+}
+.flex-control-nav li {
+	float:left;
+	width:253px;
+	height:134px;
+	margin-left:1px
+}
+.flex-control-nav li:first-child {
+	margin:0;
+}
+.flex-control-nav li a {
+	display:block;
+	cursor:pointer
+}
+.flex-control-nav li a:hover, .flex-control-nav li .flex-active {
+	
+}
+.flex-control-nav li .flex-active {
+	cursor:default;
+	pointer-events: none;
+	
+}
+/* #slides-pagination */
+ 
+#slides-pagination {
+	position:relative;
+    overflow:hidden;
+    display:block;
+}
+#slides-pagination ul {
+	width:auto !important;
+	position:relative;
+	list-style:none;
+	transform:none !important;
+	margin:0;
+    padding:0;
+    display: inline-block;
+    float: right;
+    margin-right: 30px;
+    padding-top: 27px;
+    padding-bottom:29px;
+}
+#slides-pagination ul li {
+	float:left;
+	cursor:pointer;
+    margin:0;
+    width:123px !important;
+    height:83px;
+    margin-left:16px;
+    padding:6px;
+    background-color:#fff;
+    -webkit-transition: all 0.45s ease;
+    -moz-transition: all 0.45s ease;
+    -o-transition: all 0.45s ease;
+    transition: all 0.45s ease;
+}
+#slides-pagination ul li figure {
+    margin:0;
+}
+#slides-pagination ul li:hover, #slides-pagination ul .flex-active-slide {
+     background-color:#78ccfd;
+     -webkit-transition: all 0.45s ease;
+    -moz-transition: all 0.45s ease;
+    -o-transition: all 0.45s ease;
+    transition: all 0.45s ease;
+}
+#slides-pagination .flex-direction-nav {
+	top:0;
+	left:0;
+	position:absolute;
+	margin:0;
+	width:100%;
+	list-style:none;
+	height:0;
+	display:none
+}
+.flex-caption {
+	position: absolute;
+	right: 15%;
+	bottom:22%;
+    overflow:hidden;
+    text-align:right;
+}
+.flex-caption .flex-box1 {
+    background-color:#ff7f66;
+    padding:12px 25px 0 0;
+    width:541px;
+    overflow:hidden;
+    border-bottom:1px solid #d4cdbe;
+    height: 128px;
+}
+.flex-caption .flex-box1 .title1 {
+    font:300 70px/70px 'Open Sans';
+    color:#fff6e5;
+    margin-bottom:0;
+    text-transform:uppercase;
+    text-align:right;
+    margin-bottom:2px;
+}
+.flex-caption .flex-box1 .title2 {
+    font:300 30px/30px 'Open Sans';
+    color:#3e454c;
+    margin-bottom:0;
+    text-transform:uppercase;
+    text-align:right;
+}
+.flex-caption .flex-box2 {
+    background-color:#fff6e5;
+    padding:18px 25px 4px 0;
+    text-align: right;
+    display:block;
+    overflow:hidden;
+    width: 541px;
+}
+.flex-caption .flex-box2 p {
+    font:14px/19px 'Arial';
+    color:#ada699;
+    text-transform:uppercase;
+}
+.flex-caption a {
+    font:27px 'Trebuchet MS';
+    color:#fc0c0c;
+    text-decoration:underline;
+}
+/*---------------------------------------------------------------------*/
+@media (min-width: 1200px) {
+}
+/*---------------------------------------------------------------------*/
+@media (min-width: 980px) and (max-width: 1199px){
+.flex-caption {
+    bottom: 10%;
+}
+#flexslider .flex-direction-nav {
+    bottom: 10%;
+}
+}
+/*---------------------------------------------------------------------*/
+@media (max-width: 979px){
+.flex-caption {
+    bottom: 5%;
+}
+#flexslider .flex-direction-nav {
+    bottom: 5%;
+}
+}
+/*---------------------------------------------------------------------*/
+@media (min-width: 768px) and (max-width: 979px) {
+#flexslider .flex-direction-nav {
+    right: 2%;
+} 
+.flex-caption {
+  right: 2%;  
+}
+.flex-caption .flex-box1 {
+    padding-bottom:18px;
+    height: 60px;
+}
+.flex-caption .flex-box1 .title1 {
+    font-size:40px;
+    line-height:40px;
+}
+.flex-caption .flex-box1 .title2 {
+    font-size:20px;
+    line-height:20px;
+}
+}
+/*---------------------------------------------------------------------*/
+@media (max-width: 767px) {
+.flex-caption {
+    display:none;
+}
+#flexslider .flex-direction-nav {
+    margin-right:0;
+}
+#slider {
+    margin-bottom: 30px;
+}
+#flexslider .flex-direction-nav {
+    right:5%;
+}
+.flex-direction-nav li {
+    width: 46px;
+    height: 46px;
+}
+#flexslider .flex-direction-nav li a {
+    width: 46px;
+    height: 46px;
+}
+}
+/*---------------------------------------------------------------------*/
+@media (min-width: 626px) and (max-width: 767px) {
+}
+/*---------------------------------------------------------------------*/
+@media (max-width: 626px) {
+}
+/*---------------------------------------------------------------------*/
+@media (max-width: 480px) {
+}
+/*---------------------------------------------------------------------*/
+@media (max-width: 320px) {
+}
