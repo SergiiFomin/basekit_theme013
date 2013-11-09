@@ -846,33 +846,29 @@ hr{
 /*------ Home ------- */
 
 .banner{
-  a{
-    text-decoration: none;
-    display: inline-block;
-    background-image:image('/images/template/banner-bg.jpg');
+  text-decoration: none;
+  display: inline-block;
+  background-image:image('/images/template/banner-bg.jpg');
+  background-position: center 0;
+  background-repeat: repeat;
+  min-height: 156px;
+  padding: 30px 30px 30px 30px;
+  position: relative;
+  &:hover{
+    background-image:image('/images/template/banner.jpg');
     background-position: center 0;
     background-repeat: repeat;
-    min-height: 156px;
-    padding: 30px 30px 30px 30px;
-    position: relative;
-    &:hover{
-      background-image:image('/images/template/banner.jpg');
-      background-position: center 0;
-      background-repeat: repeat;
+    color: @color-swatch2;
+    span{
       color: @color-swatch2;
-      span{
-        color: @color-swatch2;
-      }
     }
   }
   &.new{
-    a{
-      .widget.image{
-        position: absolute;
-        right: 0px;
-        bottom: 0px;
-        margin: 0;
-      }
+    .widget.image{
+      position: absolute;
+      right: 0px;
+      bottom: 0px;
+      margin: 0;
     }
   }
 }
