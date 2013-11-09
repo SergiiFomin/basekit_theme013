@@ -846,45 +846,39 @@ hr{
 /*------ Home ------- */
 
 .banner{
-  background-image:image('/images/template/banner-bg.jpg');
-  background-position: center 0;
-  background-repeat: repeat;
-  min-height: 156px;
-  padding: 30px 30px 30px 30px;
-  &.color1{
-    background-color: #006b36;
-    color: @color-swatch1;
-  }
-  &.color2{
-    color: #cd000d;
-    box-shadow: 0 0 8px rgba(0, 0, 0, .17);
-  }
-  &.color3{
-    background-image:image('/images/template/banner.jpg');
+  a{
+    text-decoration: none;
+    display: inline-block;
+    background-image:image('/images/template/banner-bg.jpg');
     background-position: center 0;
     background-repeat: repeat;
-    color: @color-swatch2;
-    span{
+    min-height: 156px;
+    padding: 30px 30px 30px 30px;
+    position: relative;
+    &:hover{
+      background-image:image('/images/template/banner.jpg');
+      background-position: center 0;
+      background-repeat: repeat;
       color: @color-swatch2;
+      span{
+        color: @color-swatch2;
+      }
     }
   }
-  &.color4{
-    background-color: #9c9c9c;
-    color: @color-swatch1;
-  }
   &.new{
-    position: relative;
-    &:after{
-      position: absolute;
-      right: 0px;
-      bottom: 0px;
-      content: "";
-      display: block;
-      background-image:image('/images/template/banner_new.png');
-      background-position: right 0;
-      background-repeat: no-repeat;
-      width: 92px;
-      height: 92px;
+    a{
+      &:after{
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+        content: "";
+        display: block;
+        background-image:image('/images/template/banner_new.png');
+        background-position: right 0;
+        background-repeat: no-repeat;
+        width: 92px;
+        height: 92px;
+      }
     }
   }
 }
