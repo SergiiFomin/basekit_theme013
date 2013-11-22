@@ -29,6 +29,13 @@
 @linkColor:             @color-swatch3;
 @linkColorHover:        @dark;
 
+// Social
+// -------------------------
+@socialColor:             @color-swatch1;
+@socialColorHover:        @color-swatch3;
+@socialBackground:        @color-swatch2;
+@socialBackgroundHover:   @color-swatch1;
+
 // Typography
 // -------------------------
 @sansFontFamily:        Arial, Helvetica, sans-serif;
@@ -229,38 +236,36 @@
 
 /*Forms*/
 
-.container{
-  textarea{
-    resize: none;
-  }
-  select, 
-  textarea, 
-  input[type="text"], 
-  input[type="password"], 
-  input[type="datetime"], 
-  input[type="datetime-local"], 
-  input[type="date"], 
-  input[type="month"], 
-  input[type="time"], 
-  input[type="week"], 
-  input[type="number"], 
-  input[type="email"], 
-  input[type="url"], 
-  input[type="search"], 
-  input[type="tel"], 
-  input[type="color"], 
-  .uneditable-input{
-    font-size: 12px;
-    .box-sizing(border-box);
-    box-shadow: none;
-    margin-bottom: 20px !important;
-    color: @dark !important;
-    .transition(all .2s linear);
-    border: 1px solid #f6f0ec !important;
-    &:focus{
-      background: @color-swatch5 !important;
-      color: @color-swatch1 !important;
-    }
+textarea{
+  resize: none;
+}
+select, 
+textarea, 
+input[type="text"], 
+input[type="password"], 
+input[type="datetime"], 
+input[type="datetime-local"], 
+input[type="date"], 
+input[type="month"], 
+input[type="time"], 
+input[type="week"], 
+input[type="number"], 
+input[type="email"], 
+input[type="url"], 
+input[type="search"], 
+input[type="tel"], 
+input[type="color"], 
+.uneditable-input{
+  font-size: 12px;
+  .box-sizing(border-box);
+  box-shadow: none;
+  margin-bottom: 20px !important;
+  color: @dark !important;
+  .transition(all .2s linear);
+  border: 1px solid #f6f0ec !important;
+  &:focus{
+    background: @color-swatch5 !important;
+    color: @color-swatch1 !important;
   }
 }
 
@@ -554,12 +559,26 @@ ul li{
       /*border: 5px solid #d1ccc2;*/
     }
   }
+  .content-wrapper{
+    text-align: center;
+    .title{
+      display: block;
+      padding-top: 20px;
+      font: 36px/40px 'Marcellus SC', serif;
+      color: @color-swatch3;
+    }
+    .description{
+      color: @color-swatch2; 
+    }
+  }
 }
 
 /*--- header end ------*/
 
 /*------ content ------- */
 
+input.button,
+button.button,
 .btn {
   display: inline-block;
   border: none;
@@ -592,6 +611,7 @@ header, footer, #content{
 
 .gallery-widget{
   margin: 0;
+  overflow: hidden;
   li{
     float: left;
     list-style: none;
@@ -619,38 +639,36 @@ header, footer, #content{
 
 /* end background image */
 
-.container{
-  input, textarea {
-    position: relative;
-    outline: none;
-    border: none;
-    .border-radius(0);
-    .box-shadow(0 0 0);
+input, textarea {
+  position: relative;
+  outline: none;
+  border: none;
+  .border-radius(0);
+  .box-shadow(0 0 0);
 
-    line-height: 20px;
-    color: @textColor;
-    padding: 5px 10px;
-    width: 100%;
-    margin: 0;
-    &:focus {
-      .box-shadow(0 0 0);
-      border: none;
-      background: none;
-    }
-    &:focus:invalid:focus{
-      .box-shadow(0 0 0);
-      border: none;
-      background: none;
-    }
+  line-height: 20px;
+  color: @textColor;
+  padding: 5px 10px;
+  width: 100%;
+  margin: 0;
+  &:focus {
+    .box-shadow(0 0 0);
+    border: none;
+    background: none;
   }
-  input{
-    .size(30px, 100%);   
-    .box-sizing(border-box); 
+  &:focus:invalid:focus{
+    .box-shadow(0 0 0);
+    border: none;
+    background: none;
   }
-  textarea{
-    width: 100%;
-    .box-sizing(border-box); 
-  }
+}
+input{
+  .size(30px, 100%);   
+  .box-sizing(border-box); 
+}
+textarea{
+  width: 100%;
+  .box-sizing(border-box); 
 }
 
 p {
@@ -685,6 +703,10 @@ a{
   }
 }
 
+.widget.logo{
+  text-align: center;
+}
+
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
@@ -699,40 +721,7 @@ h1{
   color: @color-swatch3;
   text-transform: uppercase;
   letter-spacing: 5px;
-  margin-bottom: 20px;
-  &.brand{
-    margin: 0;
-    padding: 0;
-    text-transform: uppercase;
-    text-align: center;
-    .companyheader{
-      display: inline-block;
-    }
-    a{
-      color: @color-swatch3;
-      text-decoration: none;
-      position: relative;
-      &:hover{
-        color: @color-swatch1;
-      }
-      .logo{
-        margin: 0px;
-        font-size: 0;
-        line-height: 0;
-        img{
-          display: block;
-        }
-        a{
-          display: inline-block;
-        }   
-      }
-      .company-name{
-        font: 15px/19px Times New Roman, Times, serif;
-        color: #afaca7;
-        letter-spacing: 4px;
-      }
-    }   
-  }
+  margin-bottom: 20px;  
 }
 
 h2{
@@ -929,11 +918,8 @@ hr{
       color: @color-swatch3;
     }
   }
-  strong{
-    display: block;
-    font-size: 20px;
-    line-height: 60px;
-    color: @color-swatch3;
+  div[id$="address"]{
+    margin-bottom: 14px;
   }
 }
 
@@ -1013,24 +999,9 @@ blockquote{
   }
   &:before{
     margin-right: 8px;
-    /*width: 34px;
-    left: 19px;
-    top: 17px;
-    height: 27px;
-    /*background-image:image('/images/template/blockquote.png');
-    background-position: 0 0;
-    background-repeat: no-repeat;*/
   }
   &:after{
     margin-left: 4px;
-    /*left: 64px;
-    bottom: -24px;
-    height: 34px;
-    width: 0px;
-    height: 0px;
-    border-style: solid;
-    border-width: 0 24px 24px 0;
-    border-color: transparent @color-swatch6 transparent transparent;*/
   }
 }
 
@@ -1049,7 +1020,6 @@ label{
 }
 
 .address{
-  /*padding-top: 50px;*/
   .widget.content{
     .text{
       font-size: 18px;
@@ -1110,6 +1080,69 @@ div[id$="copyright_link"]{
   }
   div{
     display: inline;
+  }
+}
+
+.widget.clicktocall a {
+  background-image: image('/images/ic-call.png');
+  background-color: @color-swatch3;
+  background-position: 10px;
+  background-repeat: no-repeat;
+  padding: 10px 10px 10px 38px;
+  margin: 0;
+  color: @color-swatch1;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  &:hover {
+    background-color: @color-swatch2;
+    text-decoration: none;
+  }
+}
+
+.widget.tweet {
+   padding: 14px 0;
+   a {
+    padding: 8px 10px 8px 32px;
+    margin: 0;
+    border: 1px solid #057ed0;
+    background-image: image('/images/twitter.png');
+    background-repeat: no-repeat;
+    background-position: 10px;
+
+    margin: 0em;
+    .border-radius(4px);
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.4);
+    font-size:.9em;
+    background-color: #32bbef;
+    color: @color-swatch1;
+    text-decoration: none;
+    text-shadow: 0 1px 0px rgba(0,0,0,0.3);
+    cursor: pointer;
+    &:hover, &:active {
+      border: 1px solid #096eb3;
+      background-color: #2cacdc;
+    }
+  }
+}
+
+.twitter{
+  ul.twitter{
+    margin: 0;
+    li{
+      list-style: none;
+      margin-bottom: 18px;
+      overflow: hidden;
+      .twitter-profile-pic{
+        float: left;
+        margin-right: 20px;
+      }
+      .twitter-content{
+        p{
+          padding-bottom: 0px;
+        }
+      }
+    }
   }
 }
 
@@ -1194,6 +1227,21 @@ div[id$="copyright_link"]{
           &:before{
             content: "\f167";
             content: "\f166";
+          }
+        }
+      }
+    }
+  }
+}
+
+.contentInner{
+  .socialicons{
+    .icons {
+      span{
+        a{
+          color: @color-swatch3;
+          &:hover{
+            color: @color-swatch2;
           }
         }
       }

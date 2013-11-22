@@ -20,7 +20,7 @@
                                 <article class="span12">
 
                                     {{widget('space', 'space', {'height': '30'})|raw}}
-                                    <h1 class="brand">{{widget('companyheader', 'companyheader', {"defaultlogo": asset('/images/logo.png')})|raw}}</h1>
+                                    {{widget('logo', 'name', {"defaultlogo": asset('images/logo.png')})|raw}}
                                     {{widget('space', 'space', {'height': '30'})|raw}}
 
                                     <div class="nav">
@@ -66,6 +66,8 @@
 
                     <article class="span12">
 
+                        {{zone('main')|raw}}
+
                         {{widget('content', 'content', {content: '<h1 class="center">food + drink + rest</h1>', lines: 'all'})|raw}}
                         {{widget('content', 'home-text', {content: '<p class="center"><strong>Cum sociis natoque penatibus et magnis dis parturient montes ascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio gravida at cursus nec luctus a lorem. Maecenas tristique orci ac sem. Duis ultricies pharetra magna. Donec accumsan malesuada orci. Donec sit amet eros. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris fermentum dictum magna.</strong></p>', lines: 'all'})|raw}}
 
@@ -75,7 +77,10 @@
                             <article class="span3">
 
                                 <div class="local">
-                                    {{widget('content', 'local-content', {content: '<p>USA - LOS ANGELES, 901 East E Street, Wilmington, CA 90744</p><span>E -mail:</span><a href="mailto:mail@demolink.org">mail@demolink.org</a><strong>1 800 123 1234</strong>', lines: 'all'})|raw}}
+
+                                    {{widget('profile', 'address', { 'profileType':'address', 'twitter':'address', 'refreshtime':'1800000'})|raw}}
+                                    {{widget('profile', 'email', { 'profileType':'email', 'twitter':'email', 'refreshtime':'1800000'})|raw}}
+
                                 </div>
 
                                 {{widget('space', 'space', {'height': '30'})|raw}}
@@ -129,9 +134,7 @@
 
                         </div>
 
-                        {{zone('main')|raw}}
                         {{widget('space', 'space', {'height': '30'})|raw}}
-
 
                         <div class="row">
 
@@ -217,8 +220,7 @@
                             <article class="span12">
 
                                 {{widget('image', 'flogo', { 'src': asset('images/flogo.png'), 'imageWidth': '276px'})|raw}}
-                                {{widget('content', 'copyright_copy', {content: '&copy;&nbsp;2013&nbsp;|&nbsp;', lines: 'all'})|raw}}
-                                {{widget('content', 'copyright_link', {content: '<a href="#">Privacy Policy</a>', lines: 'all'})|raw}}
+                                {{widget('profile', 'copyright', { 'profileType':'copyright' })|raw}}
                                 {{widget('space', 'space', {'height': '30'})|raw}}
 
                             </article>
